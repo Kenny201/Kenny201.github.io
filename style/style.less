@@ -1,6 +1,6 @@
 @font-face {
     font-family: Helvetica;
-    src: url(../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr-UltraLight_0.otf);
+    src: url(fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr-UltraLight_0.otf);
 }
 
 * {
@@ -213,12 +213,11 @@ span {
     position: relative;
     z-index: 1111;
     padding-left: 10%;
-    &:after {
+    &::after {
         content: '';
         border: 13px solid transparent;
         border-top: 14px solid #d0003e;
         position: absolute;
-     
         left: 50%;
         margin-left: -12px;
         bottom: -24px;
