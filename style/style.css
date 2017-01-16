@@ -310,3 +310,31 @@ p .menu ul::-webkit-scrollbar {
     background: linear-gradient(to right, #e6e8e8, rgba(230,232,232,0.8), #e6e8e8 100%);
     background: linear-gradient(to left, rgba(230,232,232,0.8), #e6e8e8 100%)
 }
+.recklama {
+    height: 481px;
+    width: 1440px;
+    border-top: #d7d8d9 solid 1px;
+    margin: 0 auto;
+    color: #bfc2c4;
+    position: relative
+}
+
+.recklama article {
+    background-color: #eef1f2;
+    margin-top: -80px;
+    height: 211px;
+    border-top: 5px solid #d7d8d9
+}
+
+.recklama article div {
+    height: 190px;
+    width: 220px;
+    font-size: 14px;
+    position: relative;
+    border: 1px solid #111;
+    top: 20px
+}
+
+.recklama article div:nth-child(1) {
+    padding-left: 30px
+}
