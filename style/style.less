@@ -164,42 +164,40 @@ span {
 .scroll {
     width: 940px;
     overflow-x: scroll;
+    overflow-y:hidden; 
     position: relative;
     left: 0px;
     margin: 0 auto;
     height: 370px;
-    &::-webkit-scrollbar-track {
-        background-color: #e3e5e6;
-    }
-    &::-webkit-scrollbar-thumb {
-        position: absolute;
-        width: 15px;
-        -webkit-border-radius: 0;
-        border-radius: 0;
-        border: 1px solid #111;
-        background-color: #d0003e;
-    }
-    &::-webkit-scrollbar-thumb:hover {
-        background-color: #99344e;
-    }
-    &::-webkit-resizer {
-        background-image: url('');
-        background-repeat: no-repeat;
-        width: 4px;
-        height: 0;
-    }
-    &::-webkit-scrollbar {
-        position: relative;
-        top: 30px;
-        display: block;
-        width: 55px;
-        height: 5px;
-    }
+   
+
+&::-webkit-scrollbar { max-width:34px;  height: 8px; padding-left:10px; }
+
+
+
+&::-webkit-scrollbar-track {    background-color: #999;}
+
+&::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+
+&::-webkit-scrollbar-thumb:horizontal {
+   background-color: #999;
+   position: relative;
+   margin-left:-200px;
+  height: 12px;
+
+
 }
+
+
+&::-webkit-scrollbar-corner { background-color: #999;}
+
+&::-webkit-resizer { background-color: #666;}
+}
+
 
 .slider {
     width: 940px;
-    top: 40px;
+
     margin: 0 auto;
 }
 
@@ -218,7 +216,7 @@ span {
     padding-left: 10%;
     &::after {
         content: '';
-        border: 13px solid transparent;
+       
         border-top: 14px solid #d0003e;
         position: absolute;
         left: 50%;
@@ -232,7 +230,6 @@ span {
     left: 0;
     width: 940px;
     height: 70px;
-    top: 40px;
     position: relative;
     margin: 0 auto;
     background: #e6e6e6;
@@ -294,4 +291,51 @@ span {
         background: linear-gradient(to right, rgba(230, 232, 232, 1), rgba(230, 232, 232, 0.8), #e6e8e8 100%);
         background: linear-gradient(to left, rgba(230, 232, 232, 0.8), #e6e8e8 100%);
     }
+}
+
+.recklama {
+    height: 481px;
+    width: 1440px;
+    margin: 0 auto;
+    border-top: #d7d8d9 solid 1px;
+    top:41px;  
+    color: #bfc2c4;
+    position: relative;
+article {
+    background-color: #eef1f2;
+    margin-top: -80px;
+    height: 211px;
+  
+    div {
+        &:nth-child(1){
+        padding-left:30px;
+     
+    }
+        height: 190px;
+        width: 220px;
+        font-size: 14px;
+        position: relative;
+        top: 40px;
+    }
+    border-top: 5px solid #d7d8d9;
+}
+a {
+    text-decoration:underline;
+    color:#d0003e;
+}
+
+}
+.content{
+    height:490px;
+    width:940px;
+    position: relative;
+    top:-250px;
+    border:1px solid #111;
+    margin:0 auto;
+    div{
+        width:220px;
+        height:220px;
+        border:1px solid #111;
+    }
+
 }
