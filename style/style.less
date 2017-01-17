@@ -164,40 +164,38 @@ span {
 .scroll {
     width: 940px;
     overflow-x: scroll;
-    overflow-y:hidden; 
+    overflow-y: hidden;
     position: relative;
     left: 0px;
     margin: 0 auto;
     height: 370px;
-   
-
-&::-webkit-scrollbar { max-width:34px;  height: 8px; padding-left:10px; }
-
-
-
-&::-webkit-scrollbar-track {    background-color: #999;}
-
-&::-webkit-scrollbar-track-piece { background-color: #ffffff;}
-
-&::-webkit-scrollbar-thumb:horizontal {
-   background-color: #999;
-   position: relative;
-   margin-left:-200px;
-  height: 12px;
-
-
+    &::-webkit-scrollbar {
+        max-width: 34px;
+        height: 8px;
+        padding-left: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+    &::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+    &::-webkit-scrollbar-thumb:horizontal {
+        background-color: #999;
+        position: relative;
+        margin-left: -200px;
+        height: 12px;
+    }
+    &::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+    &::-webkit-resizer {
+        background-color: #666;
+    }
 }
-
-
-&::-webkit-scrollbar-corner { background-color: #999;}
-
-&::-webkit-resizer { background-color: #666;}
-}
-
 
 .slider {
     width: 940px;
-
     margin: 0 auto;
 }
 
@@ -216,7 +214,6 @@ span {
     padding-left: 10%;
     &::after {
         content: '';
-       
         border-top: 14px solid #d0003e;
         position: absolute;
         left: 50%;
@@ -298,129 +295,106 @@ span {
     width: 1440px;
     margin: 0 auto;
     border-top: #d7d8d9 solid 1px;
-    top:41px;  
+    top: 41px;
     color: #bfc2c4;
     position: relative;
-article {
-    background-color: #eef1f2;
-    margin-top: -80px;
-    height: 211px;
-  
-    div {
-        &:nth-child(1){
-        padding-left:30px;
-     
-    }
-        height: 190px;
-        width: 220px;
-        font-size: 14px;
-        position: relative;
-        top: 40px;
-    }
-    border-top: 5px solid #d7d8d9;
-}
-a {
-    text-decoration:underline;
-    color:#d0003e;
-}
-
-}
-.content{
-    height:490px;
-    width:940px;
-    position: relative;
-    top:-250px;
-    display: flex;
-    flex-direction:row;
-
-    margin:0 auto;
-    .info{
-        width:220px;
-        height:220px;
-       
-             text-align:center;
-        border-top:5px solid #d7d8d9;
-        background-color:#f4f6f7; 
-
-        ul{
-            text-align:center;
-           
-            
-         li{
-            list-style-type: none;
-            text-decoration:underline;
-             text-align:left;
-             padding-left:30px;
-             position: relative;
-              top:22px;
-                  
-             a{color: #d0003e;
-             font-size:14px;
-             
-             line-height:28px;
-            
-           
-         }}
-       }
+    article {
+        background-color: #eef1f2;
+        margin-top: -80px;
+        height: 211px;
+        div {
+            &:nth-child(1) {
+                padding-left: 30px;
+            }
+            height: 190px;
+            width: 220px;
+            font-size: 14px;
+            position: relative;
+            top: 40px;
         }
-    
-   .search{
-       width: 220px;
-       height: 100px;
-       
-       position: relative;
-         
-       background-image:url("images/marker-blue.png");
-       top:40px;
-
-       background-color:#f4f6f7;
-       img{
-           position: relative;
-           top:27px;
-           left:26px;
-       }
-       mark{
-         top:-27px;
-           position: relative;
-           left:77px;
-           display:block;
-           width:140px;
-          background-color:#f4f6f7;
-          a{
-              color: #d0003e;
-              font-size:24px;
-          }
-
-
-       }
-     &::before {
-   content:"";
-   position:absolute;
-   top:0;
-   right:0;
-   border-width:0 16px 16px 0;
-   border-style:solid;
-   border-color:#d7d8d9 #fff;
- 
-
-}
-}
-.director{
-position: relative;
-left:128px;
-  
-}
-.text{
-    width:420px;
- 
-    height:445px;
-    line-height:30px;
-position: relative;
-left:150px;
-top:-7px;
+        border-top: 5px solid #d7d8d9;
+    }
+    a {
+        text-decoration: underline;
+        color: #d0003e;
+    }
 }
 
-
-
-} 
-
+.content {
+    height: 490px;
+    width: 940px;
+    position: relative;
+    top: -250px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    .info {
+        width: 220px;
+        height: 220px;
+        text-align: center;
+        border-top: 5px solid #d7d8d9;
+        background-color: #f4f6f7;
+        ul {
+            text-align: center;
+            li {
+                list-style-type: none;
+                text-decoration: underline;
+                text-align: left;
+                padding-left: 30px;
+                position: relative;
+                top: 22px;
+                a {
+                    color: #d0003e;
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .search {
+        width: 220px;
+        height: 100px;
+        position: relative;
+        background-image: url("images/marker-blue.png");
+        top: 40px;
+        background-color: #f4f6f7;
+        img {
+            position: relative;
+            top: 27px;
+            left: 26px;
+        }
+        mark {
+            top: -27px;
+            position: relative;
+            left: 77px;
+            display: block;
+            width: 140px;
+            background-color: #f4f6f7;
+            a {
+                color: #d0003e;
+                font-size: 24px;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-width: 0 16px 16px 0;
+            border-style: solid;
+            border-color: #d7d8d9 #fff;
+        }
+    }
+    .director {
+        position: relative;
+        left: 128px;
+    }
+    .text {
+        width: 420px;
+        height: 445px;
+        line-height: 30px;
+        position: relative;
+        left: 150px;
+        top: -7px;
+    }
+}
