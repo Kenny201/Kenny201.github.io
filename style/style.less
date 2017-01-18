@@ -199,7 +199,7 @@ span {
     margin: 0 auto;
 }
 
-.section_three {
+.section_two {
     display: block;
     width: 1440px;
     height: 520px;
@@ -207,18 +207,19 @@ span {
 
 .active {
     background: #d0003e;
-    height: 20px;
+    height: 30px;
     color: #fff;
     position: relative;
     z-index: 1111;
     padding-left: 10%;
     &::after {
         content: '';
-        border-top: 14px solid #d0003e;
+        border: 12px solid transparent;
+        border-top: 12px solid #c60032;
         position: absolute;
         left: 50%;
         margin-left: -12px;
-        bottom: -24px;
+        bottom: -22px;
         width: 0;
     }
 }
@@ -253,7 +254,7 @@ span {
 .nav2 {
     margin: 0 auto;
     width: 940px;
-    height:70px;
+    height: 90px;
     overflow: hidden;
     &::after {
         content: '';
@@ -292,7 +293,8 @@ span {
 }
 
 .recklama {
-    height: 481px;
+    height: 240px;
+    display: block;
     width: 1440px;
     margin: 0 auto;
     border-top: #d7d8d9 solid 1px;
@@ -321,11 +323,15 @@ span {
     }
 }
 
+.section_three {
+    width: 1440px;
+    height: 520px;
+}
+
 .content {
-    height: 490px;
+    height: 494xpx;
     width: 940px;
     position: relative;
-    top: -250px;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -391,11 +397,51 @@ span {
         left: 128px;
     }
     .text {
-        width: 420px;
+        width: 475px;
         height: 445px;
         line-height: 30px;
         position: relative;
+        font-size: 18px;
         left: 150px;
         top: -7px;
     }
+}
+
+footer {
+    height: 470px;
+    border-top: #d7d8d9 solid 1px;
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    .red_square 
+    img{
+        width:39px;
+        height:36px;
+    }
+    text {
+        position: relative;
+        left: 21px;
+       line-height:0;
+        font-size:12px;
+        top:-12px;
+        p{
+            position: relative;
+             left: 43px;
+             a{
+                  color: #d0003e;
+                  
+             }
+        }
+    }
+}
+.fb-page{
+   
+    left:20px;
+}
+.want{
+    width:284px;
+    height:69px;
+    position: relative;
+    left:-78px;
 }
