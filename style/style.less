@@ -16,10 +16,17 @@ header {
 }
 
 article {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 40px;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 940px;
     position: relative;
     margin: 0 auto;
@@ -38,7 +45,8 @@ article {
 }
 
 figure {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     width: 80px;
     figcaption {
         font-size: 14px;
@@ -136,13 +144,18 @@ form {
 }
 
 .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 481px;
     width: 1440px;
     background-color: #f0f3f5;
     margin: 0 auto;
     color: #bfc2c4;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     position: relative;
     figcaption {
         width: 220px;
@@ -231,10 +244,17 @@ form {
     margin: 0 auto;
     background: #e6e6e6;
     ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         color: #d0003e;
-        flex-direction: row;
-        justify-content: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         width: 940px;
         height: 70px;
         p &::-webkit-scrollbar {
@@ -265,11 +285,10 @@ form {
         width: 8%;
         height: 100%;
         /* Градиент */
-        background: -moz-linear-gradient(left, rgba(230, 232, 232, 0.8), #e6e8e8 100%);
         background: -webkit-linear-gradient( left, rgba(230, 232, 232, 0.8), #e6e8e8 100%);
-        background: -o-linear-gradient(left, rgba(230, 232, 232, 0.8), #e6e8e8 100%);
-        background: -ms-linear-gradient(left, rgba(230, 232, 232, 0.8), #e6e8e8 100%);
+        background: -webkit-linear-gradient(right, rgba(230, 232, 232, 0.6), rgba(230, 232, 232, 0.6), #e6e8e8 100%);
         background: linear-gradient(to left, rgba(230, 232, 232, 0.6), rgba(230, 232, 232, 0.6), #e6e8e8 100%);
+        background: -webkit-linear-gradient(left, rgba(230, 232, 232, 0.6), rgba(230, 232, 232, 1), #e6e8e8 100%);
         background: linear-gradient(to right, rgba(230, 232, 232, 0.6), rgba(230, 232, 232, 1), #e6e8e8 100%);
     }
     &::before {
@@ -282,11 +301,10 @@ form {
         z-index: 1;
         height: 100%;
         /* Градиент */
-        background: -moz-linear-gradient(left, rgba(230, 232, 232, 0.2), #e6e8e8 100%);
         background: -webkit-linear-gradient( left, rgba(230, 232, 232, 0.2), #e6e8e8 100%);
-        background: -o-linear-gradient(left, rgba(230, 232, 232, 0.2), #e6e8e8 100%);
-        background: -ms-linear-gradient(left, rgba(230, 232, 232, 0.2), #e6e8e8 100%);
+        background: -webkit-linear-gradient(left, rgba(230, 232, 232, 1), rgba(230, 232, 232, 0.8), #e6e8e8 100%);
         background: linear-gradient(to right, rgba(230, 232, 232, 1), rgba(230, 232, 232, 0.8), #e6e8e8 100%);
+        background: -webkit-linear-gradient(right, rgba(230, 232, 232, 0.8), #e6e8e8 100%);
         background: linear-gradient(to left, rgba(230, 232, 232, 0.8), #e6e8e8 100%);
     }
 }
@@ -331,8 +349,13 @@ form {
     height: 494xpx;
     width: 940px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin: 0 auto;
     .uilist_2 {
         width: 220px;
