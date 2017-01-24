@@ -120,9 +120,17 @@ text-transform: uppercase;
 
 /*---------------service-----------*/
 
-#service> .container-fluid{
+#service> .container{
   
-min-height:581px;
+height:581px;
+}
+
+
+@media only screen and (max-width:992px) {
+   #service> .container{
+  
+height:160vh;
+}
 }
 
 .text-under {
@@ -179,11 +187,26 @@ line-height: 24px;
     }
 }
 
+
 /*---------------about-us-----------*/
 #about-us{
     height:855px;
-    background-color:#f8f8f8;
+background-color:#f8f8f8;}
+
+    @media only screen and (min-width:142px) and (max-width:792px) {
+   #about-us{
+  
+height:320vh;
 }
+}
+  
+    @media only screen and (min-width:773px) and (max-width:990px) {
+   #about-us{
+  
+height:180vh;
+}
+}
+
 .speakers{
     position: relative;
     top:250px;
