@@ -7,7 +7,6 @@ h2 {
   line-height: 24px;
   text-transform: uppercase;
 }
-
 p {
   color: #555555;
 }
@@ -109,7 +108,6 @@ nav a {
     height: 160vh;
   }
 }
-
 .text-under {
   position: relative;
   top: 125px;
@@ -214,4 +212,134 @@ nav a {
 .item h4 p {
   position: relative;
   top: 20px;
+}
+/*---------------latest works-----------*/
+#latest-works {
+  height: 1381px;
+}
+.line p {
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+  top: 100px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.line p::after {
+  content: '';
+  margin-top: 36px;
+  margin-left: -103px;
+  border: 1px solid #111;
+  position: absolute;
+  width: 50px;
+}
+.section-tabs {
+  position: relative;
+  top: 120px;
+}
+.links {
+  text-align: center;
+}
+.links li {
+  display: inline-block;
+}
+.tab-content {
+  width: 1300px;
+  max-width: 100%;
+  position: relative;
+  left: 50px;
+  margin: 0 auto;
+  border: 1px solid #111;
+}
+.tab-content .tab-pane > div {
+  float: left;
+  margin: 20px;
+}
+.hair,
+.noutbook,
+.camera,
+.vel,
+.tetr,
+.sonny,
+.white,
+.events {
+  width: 360px;
+  height: 320px;
+}
+.hair {
+  background: url('../images/hair.png') no-repeat center top;
+}
+.noutbook {
+  background: url('../images/noutbook.png') no-repeat center top;
+}
+.camera {
+  background: url('../images/camera.png') no-repeat center top;
+}
+.vel {
+  background: url('../images/vel.png') no-repeat center top;
+}
+.tetr {
+  background: url('../images/tetr.png') no-repeat center top;
+}
+.sonny {
+  background: url('../images/sonny.png') no-repeat center top;
+}
+.white {
+  background: url('../images/white.png') no-repeat center top;
+}
+.events {
+  background: url('../images/events.png') no-repeat center top;
+}
+.text {
+  display: none;
+}
+.text .inside-text {
+  position: relative;
+  top: 30%;
+}
+.text h4 {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.text p {
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.text a {
+  color: #c0301c;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  top: 10px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 39px;
+  padding-left: 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+.text a:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 8px;
+  background: url("../images/fa-angle-left.png") no-repeat center;
+}
+.tab-pane > div:hover .text {
+  display: block;
+  width: 360px;
+  position: absolute;
+  height: 320px;
+  background: rgba(160, 52, 44, 0.8);
 }
