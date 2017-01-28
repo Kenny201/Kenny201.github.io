@@ -101,11 +101,12 @@ nav a {
 }
 /*---------------service-----------*/
 #service > .container {
-  height: 581px;
+  height: 31vh;
 }
 @media only screen and (max-width: 992px) {
   #service > .container {
-    height: 160vh;
+    height: 170vh;
+    border: 1px solid #111;
   }
 }
 .text-under {
@@ -163,12 +164,7 @@ nav a {
 }
 @media only screen and (min-width: 142px) and (max-width: 792px) {
   #about-us {
-    height: 320vh;
-  }
-}
-@media only screen and (min-width: 773px) and (max-width: 990px) {
-  #about-us {
-    height: 180vh;
+    height: 350vh;
   }
 }
 .speakers {
@@ -215,7 +211,17 @@ nav a {
 }
 /*---------------latest works-----------*/
 #latest-works {
-  height: 1381px;
+  height: 60vh;
+}
+@media only screen and (min-width: 142px) and (max-width: 872px) {
+  #latest-works {
+    height: 625vh;
+  }
+}
+@media only screen and (min-width: 873px) and (max-width: 1280px) {
+  #latest-works {
+    height: 90vh;
+  }
 }
 .line p {
   text-transform: uppercase;
@@ -342,4 +348,11 @@ nav a {
   position: absolute;
   height: 320px;
   background: rgba(160, 52, 44, 0.8);
+}
+/*--------------like work---------------*/
+#like-work {
+  background: url('../images/work.png');
+  height: 375px;
+  background-size: cover;
+  border: 1px solid #111;
 }

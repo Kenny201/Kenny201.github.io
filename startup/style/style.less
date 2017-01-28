@@ -121,13 +121,14 @@ nav a {
 
 /*---------------service-----------*/
 
-#service>.container {
-    height: 581px;
+#service > .container{
+    height: 31vh;
 }
 
 @media only screen and (max-width: 992px) {
     #service>.container {
-        height: 160vh;
+        height: 170vh;
+        border: 1px solid #111;
     }
 }
 
@@ -196,15 +197,11 @@ nav a {
 
 @media only screen and (min-width: 142px) and (max-width: 792px) {
     #about-us {
-        height: 320vh;
+        height: 350vh;
     }
 }
 
-@media only screen and (min-width: 773px) and (max-width: 990px) {
-    #about-us {
-        height: 180vh;
-    }
-}
+
 
 .speakers {
     position: relative;
@@ -262,7 +259,18 @@ nav a {
 /*---------------latest works-----------*/
 
 #latest-works {
-    height: 1381px;
+    height: 60vh;
+  
+}
+@media only screen and (min-width: 142px) and (max-width: 872px) {
+   #latest-works{
+        height: 625vh;
+    }
+}
+@media only screen and (min-width: 873px) and (max-width: 1280px) {
+   #latest-works {
+        height: 90vh;
+    }
 }
 
 .line p {
@@ -300,16 +308,14 @@ nav a {
     width: 1300px;
     max-width: 100%;
     position: relative;
-    left:50px;
+    left: 50px;
     margin: 0 auto;
-   border:1px solid #111;
-    .tab-pane > div{
-        float:left;
+    border: 1px solid #111;
+    .tab-pane>div {
+        float: left;
         margin: 20px;
-       
     }
 }
-
 
 .hair,
 .noutbook,
@@ -390,25 +396,37 @@ nav a {
         padding-left: 20px;
         background: #fff;
         border-radius: 5px;
-        &:after{
-            content:'';
-            width:15px;
-            height:15px;
+        &:after {
+            content: '';
+            width: 15px;
+            height: 15px;
             position: absolute;
-            margin-top:4px;
-            margin-left:8px;
-        
-        background: url("../images/fa-angle-left.png" )no-repeat center;}
+            margin-top: 4px;
+            margin-left: 8px;
+            background: url("../images/fa-angle-left.png")no-repeat center;
+        }
     }
 }
 
 .tab-pane>div:hover .text {
     display: block;
     width: 360px;
-    
     position: absolute;
-
-   
     height: 320px;
     background: rgba(160, 52, 44, 0.8);
 }
+
+
+/*--------------like work---------------*/
+
+#like-work {
+    background: url('../images/work.png');
+    height: 375px;
+
+    background-size: cover;
+    border: 1px solid #111;
+
+
+ 
+}
+
