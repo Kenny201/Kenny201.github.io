@@ -9,10 +9,6 @@ h2 {
     text-transform: uppercase;
 }
 
-p {
-    color: #555555;
-}
-
 section {
     position: relative;
 }
@@ -26,7 +22,6 @@ section {
     background-color: #464646;
     height: 100vh;
     border: 1px solid #111;
-    min-height: 500px;
 }
 
 .section-table {
@@ -80,22 +75,20 @@ nav a {
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
-
-.navbar-default .navbar-nav>.active>a {
-    background-color: transparent;
-    transition: background .5s;
-    border-radius: 5px;
-    color: #fff;
-    border: 1px solid #fff;
+    .navbar-nav>li>a {
+        color: #fff;
+    }
+    .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-nav>.active>a {
+        background-color: transparent;
+        -webkit-transition: background .5s;
+        transition: background .5s;
+        border-radius: 5px;
+        color: #fff;
+        border: 1px solid #fff;
+    }
 }
 
 .btn-primary {
@@ -109,32 +102,25 @@ nav a {
     font-family: Montserrat;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-transition: background .5s;
     transition: background .5s;
-}
-
-.btn-primary:hover {
-    background-color: #D1DDEF;
-    color: #878787;
-    border: none;
-}
-
-
-/*---------------service-----------*/
-
-#service > .container{
-    height: 31vh;
-}
-
-@media only screen and (max-width: 992px) {
-    #service>.container {
-        height: 170vh;
-        border: 1px solid #111;
+    &:hover {
+        background-color: #D1DDEF;
+        color: #878787;
+        border: none;
     }
 }
 
-.text-under {
+
+/* ---------------service----------- */
+
+#service {
+    min-height: 71vh;
     position: relative;
-    top: 125px;
+}
+
+.text-under {
+    margin-top: 4.5%;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -143,69 +129,65 @@ nav a {
 .name p {
     text-transform: uppercase;
     font-size: 20px;
-    position: relative;
-    top: 100px;
+    margin-top: 10%;
     font-weight: 400;
     line-height: 24px;
-}
-
-.name p::after {
-    content: '';
-    margin-top: 36px;
-    margin-left: -74px;
-    border: 1px solid #111;
-    position: absolute;
-    width: 50px;
+    &::after {
+        content: '';
+        margin-top: 36px;
+        margin-left: -74px;
+        border: 1px solid #111;
+        position: absolute;
+        width: 50px;
+    }
 }
 
 .typograph {
-    position: relative;
-    top: 190px;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    #clean {
+        position: relative;
+        top: 10px;
+        text-transform: uppercase;
+    }
+    #lorem {
+        position: relative;
+        top: 17px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
 }
 
-.typograph #clean {
-    position: relative;
-    top: 10px;
-    text-transform: uppercase;
-}
-
-.typograph #lorem {
-    position: relative;
-    top: 17px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 990px) {
+    .rock-solid {
+        position: relative;
+        top: 14px;
+    }
+    .expert {
+        position: relative;
+        top: 26px;
+    }
     .typograph {
         position: relative;
-        top: 120px;
-    }
-    .row-item-col {
-        margin: 40px 0;
+        top: -25px;
     }
 }
 
 
-/*---------------about-us-----------*/
+/* ---------------about-us----------- */
 
 #about-us {
-    height: 855px;
+    min-height: 105vh;
     background-color: #f8f8f8;
 }
 
-@media only screen and (min-width: 142px) and (max-width: 792px) {
-    #about-us {
-        height: 350vh;
-    }
+.speakers {
+    padding-top: 15%;
 }
 
-
-
-.speakers {
-    position: relative;
-    top: 250px;
+.rec {
+    margin-top: 6%;
 }
 
 .item>div {
@@ -224,54 +206,37 @@ nav a {
     background: #111;
     display: inline-block;
     opacity: 0;
+    a {
+        position: relative;
+        top: 200px;
+        &:hover {
+            background: #c0301c;
+            padding: 15px;
+        }
+    }
 }
 
-.back a {
-    position: relative;
-    top: 200px;
-}
-
-.back a:hover {
-    background: #c0301c;
-    padding: 15px;
-}
-
-.item>div:hover .front {
-    opacity: .4;
-}
-
-.item>div:hover .back {
-    opacity: 1;
+.item>div:hover {
+    .front {
+        opacity: .4;
+    }
+    .back {
+        opacity: 1;
+    }
 }
 
 .item h4 {
     font-family: Montserrat;
     font-size: 14px;
     color: #555555;
-}
-
-.item h4 p {
-    position: relative;
-    top: 20px;
-}
-
-
-/*---------------latest works-----------*/
-
-#latest-works {
-    height: 60vh;
-  
-}
-@media only screen and (min-width: 142px) and (max-width: 872px) {
-   #latest-works{
-        height: 625vh;
+    p {
+        position: relative;
+        top: 20px;
     }
 }
-@media only screen and (min-width: 873px) and (max-width: 1280px) {
-   #latest-works {
-        height: 90vh;
-    }
-}
+
+
+/* ---------------latest works----------- */
 
 .line p {
     text-transform: uppercase;
@@ -280,15 +245,14 @@ nav a {
     top: 100px;
     font-weight: 400;
     line-height: 24px;
-}
-
-.line p::after {
-    content: '';
-    margin-top: 36px;
-    margin-left: -103px;
-    border: 1px solid #111;
-    position: absolute;
-    width: 50px;
+    &::after {
+        content: '';
+        margin-top: 36px;
+        margin-left: -103px;
+        border: 1px solid #111;
+        position: absolute;
+        width: 50px;
+    }
 }
 
 .section-tabs {
@@ -298,22 +262,17 @@ nav a {
 
 .links {
     text-align: center;
-}
-
-.links li {
-    display: inline-block;
+    li {
+        display: inline-block;
+    }
 }
 
 .tab-content {
-    width: 1300px;
-    max-width: 100%;
-    position: relative;
-    left: 50px;
+    max-width: 1400px;
     margin: 0 auto;
-    border: 1px solid #111;
     .tab-pane>div {
-        float: left;
-        margin: 20px;
+        margin: 15px;
+        display: inline-block;
     }
 }
 
@@ -417,16 +376,350 @@ nav a {
 }
 
 
-/*--------------like work---------------*/
+/* --------------like work--------------- */
 
 #like-work {
     background: url('../images/work.png');
     height: 375px;
-
+    margin-top: 150px;
     background-size: cover;
-    border: 1px solid #111;
-
-
- 
 }
 
+.in-likework {
+    background: darken(red, 30%);
+    opacity: .6;
+    height: 375px;
+}
+
+.text-under-name {
+    margin-top: 4.5%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.text-under-a {
+    margin-top: 45px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 200px;
+    &:hover {
+        background: #D1DCEE;
+        -webkit-transition: background .5s;
+        transition: background .5s;
+        p {
+            color: #595353;
+        }
+    }
+}
+
+.name-blog-a p {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 100px;
+    font-weight: 400;
+}
+
+
+/* -----------blog--------- */
+
+.name-blog p {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 7%;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.name-blog p::after {
+    content: '';
+    margin-top: 36px;
+    margin-left: -136px;
+    border: 1px solid #111;
+    position: absolute;
+    width: 50px;
+}
+
+.blog-content {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.calendar {
+    font-size: 24px;
+    height: 76px;
+    font-weight: 700;
+    width: 76px;
+    font-family: Montserrat;
+    border: 2px solid #111;
+}
+
+.cal-in {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chair img {
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: auto;
+}
+
+.paper img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.under-image {
+    position: relative;
+    top: 10px;
+}
+
+.title-blog {
+    margin-left: 28px;
+    h3 {
+        color: #c0301c;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    h5 {
+        font-family: "Roboto Slab";
+        font-size: 13px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 24px;
+        /* Text style for "By , Uddin" */
+        color: #777777;
+        /* Text style for "Khalil , D" */
+        color: #c0301c;
+    }
+}
+
+.description p {
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.topic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.blog-2 {
+    top: 80px;
+}
+
+
+/* -------------------slider-------------- */
+
+#slider {
+    min-height: 483px;
+    background: #f8f8f8;
+}
+
+#carousel-example-generic {
+    position: relative;
+    top: 100px;
+    max-width: 1000px;
+    img {
+        margin-left: 30px;
+    }
+    p {
+        text-align: center;
+        position: relative;
+        top: 70px;
+        line-height: 30px;
+    }
+}
+
+.item {
+    position: relative;
+    min-height: 50vh;
+}
+
+.carousel-indicators {
+    li {
+        background-color: #dddddd;
+        width: 13px;
+        height: 13px;
+    }
+    .active {
+        background-color: #c0301c;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .jonn {
+        position: relative;
+        margin-top: -55px;
+    }
+    .item {
+        height: 60vh;
+    }
+}
+
+
+/* -------------------get in touch-------------- */
+
+#get-in-touch {
+    min-height: 100vh;
+    p {
+        font-family: "Roboto Slab";
+    }
+    .touch p::after {
+        content: '';
+        margin-top: 36px;
+        margin-left: -100px;
+        border: 1px solid #111;
+        position: absolute;
+        width: 50px;
+    }
+    .row {
+        position: relative;
+        top: 100px;
+    }
+    .text-under {
+        color: #555555;
+        font-family: "Roboto Slab";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.touch {
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.address::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    left: -20px;
+    background: url('../images/sprite.png') no-repeat 0 -8%;
+}
+
+.hotline::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    left: -20px;
+    background: url('../images/sprite.png') no-repeat 0 50%;
+}
+
+.e-mail::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    left: -25px;
+    background: url('../images/sprite.png') no-repeat 0 120%;
+}
+
+.contacts {
+    margin-top: 40px;
+    p {
+        position: relative;
+        left: 10px;
+    }
+}
+
+#inputEmail3,
+#inputPassword3 {
+    width: 348px;
+    margin-top: 20px;
+}
+
+.message {
+    margin-top: 20px;
+    max-width: 730px;
+    width: 100%;
+}
+
+.form-control {
+    margin-right: 20px;
+}
+
+#inputPassword3-2 {
+    height: 100px;
+}
+
+.send {
+    margin-top: 40px;
+    margin-left: -2px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1222px) {
+    .message {
+        max-width: 630px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .contacts {
+        position: relative;
+        left: 20px;
+        top: -25px;
+    }
+    #get-in-touch {
+        min-height: 140vh;
+    }
+}
+
+
+/* -----------------footer----------------- */
+
+footer {
+    height: 307px;
+    background-color: #c0301c;
+}
+
+.twit {
+    position: relative;
+    top: 100px;
+    &-under {
+        position: relative;
+        top: 150px;
+        color: #ffffff;
+        font-family: "Roboto Slab";
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    &::after {
+        content: '';
+        margin-top: 65px;
+        margin-left: -125px;
+        border: 1px solid #fff;
+        position: absolute;
+        width: 50px;
+    }
+    img {
+        margin-right: 10px;
+    }
+}
