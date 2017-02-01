@@ -16,7 +16,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="style/style.css" />
-  
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
 
@@ -77,12 +77,12 @@
 
     </section>
     <!-----------------service-------------->
-    <section id="service" >
+    <section id="service">
 
         <div class="container">
             <div class="row text-center ">
                 <div class="name ">
-                    <p id="services" >Services</p>
+                    <p id="services">Services</p>
                 </div>
                 <p class="text-under ">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
             </div>
@@ -872,7 +872,7 @@
 
     <section id="like-work">
         <div class="in-likework">
-            <div class="conteiner">
+            <div class="container">
 
                 <div class="row text-center">
                     <div class="name-blog-a">
@@ -981,11 +981,11 @@
             <div id="carousel-example-generic" class="carousel slide center-block" data-interval="3000" data-ride="carousel">
 
                 <ol class="carousel-indicators">
-                   
+
                     <li data-target="#carousel-example-generic " data-slide-to="0" class="active"></li>
-                   
+
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    
+
                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner ">
@@ -1101,19 +1101,19 @@
                 </form>
             </div>
         </div>
-     </section>
+    </section>
     <footer>
-            <div class="container">
+        <div class="container">
             <div class="row text-center ">
                 <div class="twit">
                     <img src="../images/twitter.png" alt="">
-                     <img src="../images/twitter.png" alt="">
-                      <img src="../images/twitter.png" alt="">
-                       <img src="../images/twitter.png" alt="">
+                    <img src="../images/twitter.png" alt="">
+                    <img src="../images/twitter.png" alt="">
+                    <img src="../images/twitter.png" alt="">
                 </div>
                 <p class="twit-under ">© 2017 KennyStartup, Designed by ShapedTheme</p>
             </div>
-            </div>
+        </div>
     </footer>
     <script type="text/javascript " src="libs/jquery-3.1.1.min.js "></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -1136,27 +1136,19 @@
             $(window).resize(classFunction);
         })
     </script>
-<script>    $(document).ready(function(){
-  $(".men").on("click","a", function (event) {
-      //отменяем стандартную обработку нажатия по ссылке
-      event.preventDefault();
+<script>    
 
-      //забираем идентификатор бока с атрибута href
-      var id  = $(this).attr('href'),
+    $(document).ready(function () {
+        $(".men").on("click", "a", function (event) {
 
-      //узнаем высоту от начала страницы до блока на который ссылается якорь
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1500);
 
-            top = $(id).offset().top;
-
-       
-
-        //анимируем переход на расстояние - top за 1500 мс
-
-        $('body,html').animate({scrollTop: top}, 1500);
+        });
 
     });
-
-});
 </script>
 </body>
 
