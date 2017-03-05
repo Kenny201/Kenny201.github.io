@@ -178,7 +178,7 @@ html{
   transition: all .4s ease-in-out;
   
 }
-.ribbon_1 a:hover {
+.ribbon_1:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
    z-index:1111111111;
@@ -197,7 +197,7 @@ z-index:1111;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-.ribbon_2 a:hover {
+.ribbon_2:hover {
   
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -216,7 +216,7 @@ z-index:1111;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-.ribbon_3 a:hover {
+.ribbon_3:hover {
   
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
