@@ -166,11 +166,7 @@ html{
   text-transform: uppercase;
 }
 
-.ribbon a:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-   z-index:1111111111;
-}
+
 
 .ribbon a:hover p {
   color: #f56416;
@@ -182,6 +178,11 @@ html{
   transition: all .4s ease-in-out;
   
 }
+.ribbon_1 a:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+   z-index:1111111111;
+}
 .ribbon_1 span {
     position: absolute;
   -webkit-transform: rotate(-90deg);
@@ -189,11 +190,18 @@ html{
   left:20px;
   top: 60px;
 }
+
 .ribbon_2 {
 z-index:1111;
    position:relative;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+}
+.ribbon_2 a:hover {
+  
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+ z-index:1111;
 }
 .ribbon_2 span {
  position: absolute;
@@ -207,6 +215,12 @@ z-index:1111;
   z-index:11;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+}
+.ribbon_3 a:hover {
+  
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+ z-index:11;
 }
 .ribbon_3 span {
  position: absolute;
