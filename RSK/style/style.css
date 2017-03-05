@@ -137,6 +137,7 @@ html{
 }
 
 .ribbon {
+  
   margin-top: -94px;
   position: relative;
   left: 38px;
@@ -180,7 +181,7 @@ html{
   
 }
 .ribbon_1 span {
-  position: absolute;
+  position: relative;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   left:20px;
@@ -193,7 +194,7 @@ html{
   transition: all .4s ease-in-out;
 }
 .ribbon_2 span {
-  position: absolute;
+  position: relative;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   top:95px;
