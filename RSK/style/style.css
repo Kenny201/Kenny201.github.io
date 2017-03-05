@@ -181,27 +181,27 @@ html{
   
 }
 .ribbon_1 span {
-  position: relative;
+  position: absolute;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   left:20px;
   top: 60px;
 }
 .ribbon_2 {
-
+z-index:1111
   
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 .ribbon_2 span {
-  position: relative;
+  position: absolute;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   top:95px;
   left: 20px;
 }
 .ribbon_3 {
-
+  z-index:11;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
