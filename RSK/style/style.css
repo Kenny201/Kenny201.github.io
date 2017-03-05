@@ -174,7 +174,7 @@ html{
   color: #f56416;
 }
 .ribbon_1 {
- 
+ z-index:1111111111;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   
