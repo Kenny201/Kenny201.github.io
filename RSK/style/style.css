@@ -175,13 +175,14 @@ html{
   color: #f56416;
 }
 .ribbon_1 {
+   position: absolute;
  z-index:1111111111;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   
 }
 .ribbon_1 span {
-  position: absolute;
+
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   left:20px;
@@ -189,24 +190,25 @@ html{
 }
 .ribbon_2 {
 z-index:1111
-  
+   position: absolute;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 .ribbon_2 span {
-  position: absolute;
+ 
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   top:95px;
   left: 20px;
 }
 .ribbon_3 {
+   position: absolute;
   z-index:11;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 .ribbon_3 span {
-  position: absolute;
+
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   top:70px;
