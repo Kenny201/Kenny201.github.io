@@ -35,8 +35,6 @@ html{
   height: 20px;
 }
 
-.icon{}
-
 .icon-home {
   width: 15px;
   left: 0;
@@ -176,7 +174,7 @@ html{
   color: #f56416;
 }
 .ribbon_1 {
-
+  position:absolute;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   z-index: 1111;
@@ -189,7 +187,7 @@ html{
   top: 60px;
 }
 .ribbon_2 {
-
+position:absolute;
   z-index: 111;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -202,6 +200,7 @@ html{
   left: 20px;
 }
 .ribbon_3 {
+  position:absolute;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
