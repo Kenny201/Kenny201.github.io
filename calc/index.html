@@ -1,0 +1,218 @@
+<style type="text/css">
+    #calcwrap{
+        background:#CCC;
+        border: groove 5px; /*вид границ нашего калькулятора, чтобы не терять время выбираем groove, помните что не во всех браузерах границы будут отображаться одинаково, так что если торопиться некуда то лучше воспользоваться например рисунками для более корректного и красивого отображения*/
+        border-radius: 15px; /*Добавим закругленные уголки из css3, эта фишка работает не во всех браузерах*/
+        width: 255px;
+        height: 300px;
+        margin-top: 10px;
+        padding: 2px;
+        display:block;
+    }
+    #display_wrap { 
+      background: #777;
+        width: 245px;
+        height: 50px;
+        margin: 5px 5px 10px;
+    }
+
+    #editWide { /*дисплей*/
+
+        margin-left: 3px;
+        text-align:right;
+        height:30px;
+    }
+    #submit img{
+        position: relative;
+        left:15px;
+    }
+    #submit  input{ /*Кнопочки*/
+        width: 40px;
+        height: 30px;
+        border-radius: 5px;
+        background:#D8D8D8;
+        text-align:center;
+        margin: 15px 5px 5px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #submit  input:hover{
+        background: #bfbeb9;
+    }
+
+</style>
+<div id="calculator">
+    <div id="message"></div>
+    <div id="calcwrap">
+<form name="calc" action="">
+    <table class="tblCalc" cellpadding=0 cellspacing=0>
+        <tr>
+
+            <td colspan=5 id="display_wrap" align=middle>
+                <input id="editWide" name="ReadOut" type="Text"
+                       size=28 value="0" width="250px">
+            </td>
+        </tr>
+
+        <tr id="submit">
+
+            <td colspan="3"><img src="casio-logo.svg" width="100" height="30" alt=""></td>
+            <td><input name="btnClear" type="Button"
+                       value="C" onclick="Clear()" />
+                </td>
+            <td><input name="btnClearEntry" type="Button"
+                       value="CE" onclick="ClearEntry()" />
+                </td>
+        </tr>
+        <tr id="submit">
+            <td><input name="btnSeven" type="Button"
+                       value="7" onclick="NumPress(7)"></td>
+            <td><input name="btnEight" type="Button"
+                       value="8" onclick="NumPress(8)"></td>
+            <td><input name="btnNine" type="Button"
+                       value="9" onclick="NumPress(9)"></td>
+            <td><input name="btnPlus" type="Button"
+                       value="+" onclick="Operation('+')" /></td>
+            <td><input name="btnMultiply" type="Button"
+                       value="*" onclick="Operation('*')" /></td>
+        </tr>
+        <tr id="submit">
+            <td><input name="btnFour" type="Button"
+                       value="4" onclick="NumPress(4)"></td>
+            <td><input name="btnFive" type="Button"
+                       value="5" onclick="NumPress(5)"></td>
+            <td><input name="btnSix" type="Button"
+                       value="6" onclick="NumPress(6)"></td>
+            <td><input name="btnMinus" type="Button"
+                       value="-" onclick="Operation('-')" /></td>
+            <td><input name="btnDivide" type="Button" value=" / " onclick="Operation('/')" /></td>
+        </tr>
+        <tr id="submit">
+            <td><input name="btnOne" type="Button"
+                       value="1" onclick="NumPress(1)"></td>
+            <td><input name="btnTwo" type="Button"
+                       value="2" onclick="NumPress(2)"></td>
+            <td><input name="btnThree" type="Button"
+                       value="3" onclick="NumPress(3)"></td>
+            <td><input name="btnPercent" type="Button"
+                       value="%" onclick="Percent()" /></td>
+            <td><input name="btnPercent" type="Button"
+                       value="√ " onclick="Pow()" /></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr id="submit">
+            <td><input name="btnZero" type="Button"
+                       value="0" onclick="NumPress(0)"></td>
+            <td><input name="btnDecimal" type="Button"
+                       value="." onclick="Decimal()"></td>
+            <td><input name="btnNeg" type="button"
+                       value="+/-" onclick="Neg()"/></td>
+            <td ><input id="btnWide" name="btnEquals"
+                                   type="Button" value="π" onclick="Pi('')"></td>
+            <td colspan="2"><input id="btnWide" name="btnEquals"
+                                   type="Button" value="=" onclick="Operation('=')"></td>
+        </tr>
+    </table>
+</form>
+    </div>
+</div>
+<script>
+    var Fcalc = document.calc;
+    var Currents = 0;
+    var FlagNewNum = false;
+    var PendingOp = "";
+    // обработчик нажатия
+    function NumPress (Num)
+    {
+        if (FlagNewNum)
+        {
+            Fcalc.ReadOut.value = Num;
+            FlagNewNum = false;
+        }
+        else
+        {
+            if (Fcalc.ReadOut.value == "0")
+                Fcalc.ReadOut.value = Num;
+            else
+                Fcalc.ReadOut.value += Num;
+        }
+    }
+
+    // обработчик нажатия
+    function Operation (Oper)
+    {
+        var Readout = Fcalc.ReadOut.value;
+        if (FlagNewNum && PendingOp != "=")
+        {
+            Fcalc.ReadOut.value = Currents;
+        }
+        else
+        {
+            FlagNewNum = true;
+            if ( '+' == PendingOp )
+                Currents += parseFloat(Readout);
+            else if ( '-' == PendingOp )
+                Currents -= parseFloat(Readout);
+            else if ( '/' == PendingOp )
+                Currents /= parseFloat(Readout);
+            else if ( '*' == PendingOp )
+                Currents *= parseFloat(Readout);
+            else
+                Currents = parseFloat(Readout);
+            Fcalc.ReadOut.value = Currents;
+            PendingOp = Oper;
+        }
+    }
+    function Decimal ()
+    {
+        var curReadOut = Fcalc.ReadOut.value;
+        if (FlagNewNum)
+        {
+            curReadOut = "0.";
+            FlagNewNum = false;
+        }
+        else
+        {
+            if (curReadOut.indexOf(".") == -1)
+                curReadOut += ".";
+        }
+        Fcalc.ReadOut.value = curReadOut;
+    }
+
+    function ClearEntry ()
+    {
+        Fcalc.ReadOut.value = "0";
+        FlagNewNum = true;
+    }
+    // Полная очистка всех результатов
+    function Clear ()
+    {
+        Currents = 0;
+        PendingOp = "";
+        ClearEntry();
+
+    }
+    // меняем знак текущего результата
+    function Neg ()
+    {
+        Fcalc.ReadOut.value =
+            parseFloat(Fcalc.ReadOut.value) * -1;
+    }
+
+    // вычисляем значение процентов
+    function Percent ()
+    {
+        Fcalc.ReadOut.value =
+            (parseFloat(Fcalc.ReadOut.value) / 100);
+    }
+    function Pow ()
+    {
+        Fcalc.ReadOut.value =
+            (parseFloat(Fcalc.ReadOut.value) / 2);
+    }
+    function Pi ()
+    {
+        Fcalc.ReadOut.value =3.14;
+    }
+</script>
