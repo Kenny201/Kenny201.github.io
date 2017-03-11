@@ -540,4 +540,20 @@
   <script src="js/bootstrap.min.js "></script>
   <script type="text/javascript" src="libs/slide/dist/js/jquery.sliderPro.js"></script>
   <script type="text/javascript " src="libs/slide.js "></script>
+  <script>
+        $(document).ready(function() {
+            function classFunction() {
+                if ($('body').width() > 992) {
+                    $('.header-menu .col-md-5').addClass('text-right');
+
+                } else {
+                    $('.header-menu .col-md-5').removeClass('text-right');
+
+                }
+            }
+
+            classFunction();
+            $(window).resize(classFunction);
+        })
+    </script>
 </body>
