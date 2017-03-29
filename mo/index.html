@@ -8,11 +8,11 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <input type="text" id="name" name="name" size="20" maxlength="50" value="Введите адрес">
-        <input type="button" value="Посмотреть" onClick='myFunction()'>
+        <form>
+            <input type="text" id="name" name="name" size="20" maxlength="50" value="Введите адрес">
+            <input type="button" value="Посмотреть" onClick='myFunction()'>
         </form>
- <script>
+     <script>
         function myFunction() {
         window.location.href = 'http://' + document.getElementById("name").value;
         }
