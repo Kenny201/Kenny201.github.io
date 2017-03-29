@@ -1,0 +1,10 @@
+ <form>
+        Введите адрес: <input type="text" id="name">
+        <input type="button" value="Посмотреть" onClick='myFunction()'>
+    </form>
+
+    <script>
+        function myFunction() {
+        window.location.href = 'http://' + document.getElementById("name").value;
+        }
+    </script>
