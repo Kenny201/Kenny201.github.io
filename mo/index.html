@@ -16,12 +16,16 @@
        <script type="text/javascript " src="jquery-3.1.1.min.js "></script>
        <script type="text/javascript" src="mo.js"></script>
        <script src="https://moclients.com/js/423.js"></script>
-    <script>
-var url = "https://moclients.com/js/423.js";
-         if (window.location.href )    {
-                $.getScript( url);
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+           var url = "https://moclients.com/js/423.js";
+         if (window.location.href)    {
+                return ($.getScript( url));
              }
-</script>
+      
+        });
+    </script>
 
   </body>
 </html>
