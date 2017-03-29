@@ -11,7 +11,7 @@
         <form>
             <input type="text" id="name" name="name" size="20" maxlength="50" value="">
           
-            <input type="button" value="Отправить" onClick='myFunction()'/> 
+            <input type="button" id="but" value="Отправить" onClick='myFunction()'/> 
         </form>
        <script type="text/javascript " src="jquery-3.1.1.min.js "></script>
        <script type="text/javascript" src="mo.js"></script>
@@ -19,10 +19,10 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-           var url = "https://moclients.com/js/423.js";
-         if (window.location.href)    {
-                return ($.getScript( url));
-             }
+          var url = "https://moclients.com/js/423.js";
+         $("#but").click($.getScript(url));  
+                
+             
       
         });
     </script>
