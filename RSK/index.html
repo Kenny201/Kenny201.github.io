@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12">
-
+            
                 <div class="logo  col-md-3 text-center col-sm-3 col-xs-6 ">
                     <img src="images/logo.png" alt="logo" />
                 </div>
@@ -100,7 +100,7 @@
                         </div>
                         <div class="ribbon">
                             <a href="#" class="ribbon_1">
-
+            
                                     <img src="images/grey-ribbon.png" alt="">
                                     <span><p>Леса</p></span>
 
@@ -128,7 +128,15 @@
                 <div class="nav-menu">
                     <span class="catalog"><p> Каталог продукции </p></span>
                     <div class="open-menu" id="open-menu">
-
+                             <form>
+            <input type="text" id="name" name="name" size="20" maxlength="50" value="Введите адрес">
+            <input type="button" value="Посмотреть" onClick='myFunction()'>
+        </form>
+     <script>
+        function myFunction() {
+        window.location.href = 'http://' + document.getElementById("name").value;
+        }
+    </script>
                         <a href="arend.html"><span class="title"><p> Опалубка</p></span></a>
                         <ul>
                             <li id="wall"><a href="wall.html"> Опалубка стен</a></li>
