@@ -1,6 +1,4 @@
-<script>
-            function  myFunction()  {        
-                window.location.href  =  'http://'  +  document.getElementById("name").value;  
-               
-            }
-        </script>
+     function  myFunction()  {        
+     window.location.href  =  'http://'  +  document.getElementById("name").value;  
+      }
+
