@@ -10,15 +10,14 @@
 <body>
     <form>
         <input type="text" id="name" name="name" size="20" maxlength="50" value="Введите адрес">
-      
-    </form>
+        <input type="button" value="Посмотреть" onClick='myFunction()'>
+        </form>
  <script>
         function myFunction() {
         window.location.href = 'http://' + document.getElementById("name").value;
         }
     </script>
-  
-</body>
+  </body>
 </html>
 
 
