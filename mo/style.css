@@ -2,10 +2,11 @@ body{
     height:100%;
 background:grey;
 
-overflow-x: hidden !important;
+
 
 
 }
-
+iframe{
+    overflow-x: hidden !important;}
 
 
