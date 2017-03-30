@@ -1,4 +1,5 @@
 body{
+    height:100%;
 background:grey;}
 iframe html, iframe html body { margin:0px; padding:0px}
 #ifr{
