@@ -14,15 +14,16 @@
        <form>
         <input type="text" id="name" size="20" maxlength="50">
         <input type="button" value="Отправить" onclick="myFunction()">
+           <iframe></iframe>
     </form>
     <script>
         function  myFunction()  {        
             var q = 'http://'  +  document.getElementById("name").value;  
             document.createElement("body");
-         	var el = document.createElement("iframe");
+         	var el = getElementsByTagName("iframe");
 
 document.body.appendChild(el);
-el.id = 'iframe';
+
 el.style.width = "100%";
 el.style.height = "100%";
 
