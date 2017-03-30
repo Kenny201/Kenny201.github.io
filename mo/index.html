@@ -21,15 +21,13 @@
             var q = 'http://'  +  document.getElementById("name").value;  
             document.createElement("body");
          	var el=document.createElement("iframe");
+document.body.removeChild(el);            
 document.body.appendChild(el);
             
 el.style.width = "100%";
 el.style.height = "100%";
 el.src = q;
-var il=document.createElement("iframe");
-il.style.width = "100%";
-il.style.height = "100%";
-il.src = q;           
+       
                   }
         
     </script>
