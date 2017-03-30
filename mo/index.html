@@ -11,16 +11,22 @@
 <body>
 
 
-        <form>
-            <input type="text" id="name" size="20" maxlength="50">
+       <form>
+        <input type="text" id="name" size="20" maxlength="50">
+        <button type="button" onclick="myFunction()">Go</button>
+    </form>
+    <script>
+        function  myFunction()  {        
+            var q = 'http://'  +  document.getElementById("name").value;  
+            innerHTML = '<iframe width="100%" height="100% frameborder="5" src="' + q + '"></iframe>';
+        }
+    </script>
 
-        </form>
-       <iframe width="100%" height="100%" id="ifr" marginwidth="0" scrolling="no" src="http://project188006.tilda.ws/"  ></iframe>
 
-
-
-
-
-        <script src="https://moclients.com/js/423.js"></script>
+    <script src="https://moclients.com/js/423.js"></script>
 </body>
-</html>
+
+
+
+
+
