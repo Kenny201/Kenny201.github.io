@@ -13,28 +13,19 @@
 
         <form>
             <input type="text" id="name" size="20" maxlength="50">
-            <div id=fr data='<iframe width="240" height="260" src="https://kenny201.github.io/mo/index3.html" frameborder="5" sandbox="allow-scripts">Это ФРЕЙМ ПАЦАН</iframe>'>Смотреть ролик ?<br><br></div><button type="button" onclick="myFunction()">Go</button>
+       <button type="button" onclick="myFunction()">Go</button>
         </form>
         <script>
             function  myFunction()  {        
                            
-var q =  window.location  =  'http://'  +  document.getElementById("name").value;  
+var q =  'http://'  +  document.getElementById("name").value;  
   innerHTML = '<iframe width="240" height="260" frameborder="5" src="'+q+'"></iframe>';   
             }
         </script>
-    <script>
-function PlayTo(sel){
-
-  var div = sel.previousSibling;
-
-  div.innerHTML=div.getAttribute('data');
-
-  sel.style.display = "none";
-
-}
 
 
-</script>
+
+
 
         <script src="https://moclients.com/js/423.js"></script>
 </body>
