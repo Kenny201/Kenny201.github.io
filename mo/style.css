@@ -2,13 +2,4 @@ body{
     height:100%;
 background:grey;}
 iframe html, iframe html body { margin:0px; padding:0px}
-#ifr{
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    height: 4000px;
 
-
-   
-}
