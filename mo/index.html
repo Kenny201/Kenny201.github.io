@@ -13,25 +13,25 @@
 
        <form>
         <input type="text" id="name" size="20" maxlength="50">
-        <input type="button" value="Отправить" onclick="myFunction()">
+        <input type="button" value="Отправить" onclick="myFunction();remove();">
         
     </form>
     <script>
+        var el=document.createElement("iframe");
         function  myFunction()  {        
             var q = 'http://'  +  document.getElementById("name").value;  
             document.createElement("body");
-         	var el=document.createElement("iframe");
-            	var rl=document.createElement("iframe");
-          document.body.replaceChild(el,rl);
+         	          
+          document.body.appendChild(el);
 
 el.style.width = "100%";
 el.style.height = "100%";
 el.src = q;
-
-rl.style.width = "100%";
-rl.style.height = "100%";
-rl.src = q;       
                   }
+        function remove(){
+             document.body.removeChild(el);
+
+        }
         
     </script>
 
