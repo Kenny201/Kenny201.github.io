@@ -18,13 +18,14 @@
         
     </form>
     <script>
-      
+       var div=document.createElement("div");
         var el=document.createElement("iframe");
          el.style.overflow = "hidden";
+          div.style.overflow = "hidden";
         function  myFunction()  {        
             var q = 'http://'  +  document.getElementById("name").value;  
             document.createElement("body");
-            document.body.appendChild(el);
+           div.appendChild(el);
           
 
 el.style.width = "100%";
