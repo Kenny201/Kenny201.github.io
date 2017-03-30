@@ -21,9 +21,10 @@
             var q = 'http://'  +  document.getElementById("name").value;  
             document.createElement("body");
          	var el=document.createElement("iframe");
-          
-document.body.appendChild(el);
-document.body.removeChild(el);  
+          document.body.appendChild(el);
+            
+  var myOldChild = document.body.removeChild(el);
+document.body.appendChild(myOldChild);
 el.style.width = "100%";
 el.style.height = "100%";
 el.src = q;
