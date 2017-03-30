@@ -18,18 +18,18 @@
         
     </form>
     <script>
-       var div=document.createElement("div");
+    
         var el=document.createElement("iframe");
-         el.style.overflow = "hidden";
+    
           div.style.overflow = "hidden";
         function  myFunction()  {        
             var q = 'http://'  +  document.getElementById("name").value;  
             document.createElement("body");
-           div.appendChild(el);
+           document.body.appendChild(el);
           
 
 el.style.width = "100%";
-el.style.height= "100%";  
+el.style.height= "3500px";  
 el.src = q;
 
 el.setAttribute("frameborder", "0");
