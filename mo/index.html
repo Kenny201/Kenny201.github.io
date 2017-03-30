@@ -18,9 +18,9 @@
         
     </form>
     <script>
-         var div=document.createElement("div");
+      
         var el=document.createElement("iframe");
-         
+         el.style.overflow = "hidden";
         function  myFunction()  {        
             var q = 'http://'  +  document.getElementById("name").value;  
             document.createElement("body");
@@ -30,7 +30,7 @@
 el.style.width = "100%";
 el.style.height= "100%";  
 el.src = q;
-el.style.overflow = "hidden";
+
 el.setAttribute("frameborder", "0");
              
 
