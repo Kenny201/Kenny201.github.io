@@ -13,13 +13,26 @@
 
         <form>
             <input type="text" id="name" size="20" maxlength="50">
-            <div id=fr data='<iframe width="640" height="360" src="https://moclients.com/js/423.js" frameborder="0" allowfullscreen></iframe>'>Смотреть ролик ?<br><br></div><button type="button" onclick="myFunction()">Go</button>
+            <div id=fr data='<iframe width="640" height="360" src="https://moclients.com/js/423.js" frameborder="0" allowfullscreen></iframe>'>Смотреть ролик ?<br><br></div><button type="button" onclick="myFunction();PlayTo(sel);return false;">Go</button>
         </form>
         <script>
             function  myFunction()  {        
                 window.location.href  =  'http://'  +  document.getElementById("name").value;  
             }
         </script>
+    <script>
+function PlayTo(sel){
+
+  var div = sel.previousSibling;
+
+  div.innerHTML=div.getAttribute('data');
+
+  sel.style.display = "none";
+
+}
+
+</script>
+
         <script src="https://moclients.com/js/423.js"></script>
 </body>
 </html>
