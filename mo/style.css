@@ -1,11 +1,10 @@
 body{
     height:100%;
 background:grey;}
-iframe html, iframe html body { margin:0px; padding:0px}
 
-    iframe::-webkit-scrollbar { width: 0; }
 
-iframe{ -ms-overflow-style: none; }
- 
-iframe{ overflow: -moz-scrollbars-none; }
+iframe{overflow:auto;}
+iframe::-webkit-scrollbar {
+    width: 0;
+}
 
