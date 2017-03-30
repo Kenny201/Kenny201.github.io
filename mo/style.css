@@ -6,7 +6,7 @@ background:grey;
 
 
 }
-div{
-    overflow-x: hidden !important;}
+div,html,body,iframe{
+    overflow-x: hidden;}
 
 
