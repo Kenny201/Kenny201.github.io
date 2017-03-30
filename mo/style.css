@@ -3,3 +3,9 @@ body{
 background:grey;}
 iframe html, iframe html body { margin:0px; padding:0px}
 
+    iframe::-webkit-scrollbar { width: 0; }
+
+iframe{ -ms-overflow-style: none; }
+ 
+iframe{ overflow: -moz-scrollbars-none; }
+
