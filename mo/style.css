@@ -5,6 +5,13 @@ background:#49B1F8;
 p,form{
 
 margin-left:50%;}
+input.text{
+  width:  200px;
+    height: 15px;
+    padding: 5px 10px 5px 10px;
+    border:1px solid #999;
+    font-size:16px;
+  font-family: Tahoma;}
 p{
   font-family:Arial,sans-serif;
   font-size:30px;
