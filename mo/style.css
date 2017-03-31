@@ -4,7 +4,7 @@ background:#49B1F8;
   padding:0;
   margin:0;
 }
-input.text,input.button{
+form{
   position:relative;
 
   text-align:center;
