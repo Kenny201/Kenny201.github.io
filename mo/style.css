@@ -3,8 +3,8 @@ height:100%;
 background:#49B1F8;
 }
 p,form{
-
-margin:auto;}
+display:block;
+margin:0 auto;}
 input.text{
   width:  200px;
     height: 45px;
