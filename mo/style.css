@@ -10,7 +10,7 @@ input.text{
   width:  200px;
     height: 45px;
     padding: 5px 10px 5px 10px;
-    border-radius:15px ;
+    border-radius:8px ;
   }
 p{
   font-family:Arial,sans-serif;
@@ -18,7 +18,7 @@ p{
   color:#ffffff;
 }
 input.button{
-
+ border-radius:8px ;
 background:#FFD303;
 }
 
