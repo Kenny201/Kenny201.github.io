@@ -11,13 +11,13 @@ input.text{
   width:  200px;
     height: 45px;
     padding: 5px 10px 5px 10px;
-    border:1px solid #999;
-    font-size:16px;
-  font-family: Tahoma;}
+    border-radius:15px ;
+  }
 p{
   font-family:Arial,sans-serif;
   font-size:30px;
-  color:#ffffff;}
+  color:#ffffff;
+}
 input.button{
 
 background:#FFD303;
