@@ -4,8 +4,7 @@ background:#49B1F8;
   padding:0;
   margin:0;
 }
-p,form{
-display:block;
+div{
 margin:0 auto;}
 input.text{
   width:  200px;
