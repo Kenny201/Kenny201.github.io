@@ -5,11 +5,14 @@ background:#49B1F8;
   margin:0;
 }
 input.text,input.button{
-margin-top:20px;
   position:relative;
-  left:25%;
+  left:30%;
   text-align:center;
 }
+p{
+  margin-top:20px;
+   position:relative;
+  left:25%;}
 input.text{
   width:  200px;
     height: 45px;
