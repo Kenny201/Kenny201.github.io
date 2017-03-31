@@ -6,6 +6,9 @@ background:#49B1F8;
 }
 div{
 margin-top:20px;
+  position:relative;
+  left:25%;
+  text-align:center;
 }
 input.text{
   width:  200px;
