@@ -20,5 +20,7 @@ p{
 input.button{
  border-radius:8px ;
 background:#FFD303;
+  color:#fff;
+  font-size:10px;
 }
 
