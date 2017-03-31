@@ -13,12 +13,12 @@
     <p> Посмотрите как выглядит ваш сайт с нашим виджетом</p>
        <form>
         <input type="text" placeholder="Ваш сайт" id="name" class="text" size="30" maxlength="50">
-        <input type="button" style="width:200px;height:45px"  value="Отправить" class="button" onclick="myFunction()">
+        <input type="button" style="width:200px;height:45px"  value="Отправить" class="button" onclick="Function()">
     </form>
    
     <script>
         var el=document.createElement("iframe");
-        function  myFunction()  {        
+        function  Function()  {        
             var q = 'http://'  +  document.getElementById("name").value;  
                 document.createElement("body");
                 document.body.appendChild(el);
