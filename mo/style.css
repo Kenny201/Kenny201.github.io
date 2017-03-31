@@ -3,12 +3,11 @@ height:100%;
 background:#49B1F8;
 }
 p,form{
-display:flex;
-  flex-direction:row;
-align-items:center;}
+position:relative;
+left:50%;}
 p{
   font-family:Arial,sans-serif;
   font-size:30px;
-  color:#111111;}
+  color:#ffffff;}
 
 
