@@ -4,6 +4,7 @@ background:#49B1F8;
 }
 p,form{
 display:flex;
+  flex-direction:row;
 align-items:center;}
 
 
