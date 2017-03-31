@@ -30,8 +30,7 @@ input.button{
  border-radius:8px ;
 background:#FFD303;
   border:0;
-  position:relative;
-  top:2px;
+  
   margin-left:10px;
  -webkit-box-shadow: 1px 6px 18px 0px rgba(51, 50, 50, 0.59);
 -moz-box-shadow:    1px 6px 18px 0px rgba(51, 50, 50, 0.59);
