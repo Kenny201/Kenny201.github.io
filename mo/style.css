@@ -1,11 +1,8 @@
 body{
 height:100%;
 background:grey;
-
-
-
-
 }
-
+p,form{
+  text-align:center;}
 
 
