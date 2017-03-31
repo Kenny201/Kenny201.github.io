@@ -5,7 +5,8 @@ background:#49B1F8;
   margin:0;
 }
 div{
-margin:0 auto;}
+margin-top:20px;
+margin-left:25%;}
 input.text{
   width:  200px;
     height: 45px;
