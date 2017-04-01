@@ -1,0 +1,42 @@
+body{
+height:100%;
+background:#49B1F8;
+  padding:0;
+  margin:0;
+}
+form{
+  position:relative;
+
+  text-align:center;
+}
+p{
+  margin-top:20px;
+   position:relative;
+ 
+text-align:center}
+input.text{
+  width:  200px;
+    height: 45px;
+    border:0;
+    padding: 5px 10px 5px 10px;
+    border-radius:5px ;
+  }
+p{
+  font-family:Arial,sans-serif;
+  font-size:30px;
+  color:#ffffff;
+}
+input.button{
+ border-radius:8px ;
+background:#FFD303;
+  border:0;
+  
+  margin-left:10px;
+ -webkit-box-shadow: 1px 6px 18px 0px rgba(51, 50, 50, 0.59);
+-moz-box-shadow:    1px 6px 18px 0px rgba(51, 50, 50, 0.59);
+box-shadow:         1px 6px 18px 0px rgba(51, 50, 50, 0.59);
+  color:#fff;
+  font-size:17px;
+  font-weight:bold;
+}
+
