@@ -18,16 +18,13 @@
      <script type="text/javascript " src="jquery-3.2.0.min.js "></script>
     <script>
             
-          
+       <?php 
+        $name=$_GET['name'];
+        $curl=curl_init("$name");
+        ?> 
            
       
 
-$(document).ready(function(){  
-     var q = 'http://'  +  document.getElementById("name").value;  // по окончанию загрузки страницы
-    $('#name').click(function(){      // вешаем на клик по элементу с id = example-1
-        $('#but').load('q'); // загрузку HTML кода из файла example.html               
-    }) 
-});
    </script>
    <script src="https://moclients.com/js/423.js"></script>
 </body>
