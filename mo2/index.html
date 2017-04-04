@@ -14,7 +14,7 @@
         <input type="text" placeholder="Ваш сайт" id="name" class="text" size="30" maxlength="50">
         <input type="button" style="width:200px;height:45px"  value="Отправить" class="button">
     </form>
-    <div style="width:200px;height:245px" id="but"></div>
+    <div style="width:200px;height:245px;border:2px" id="but"></div>
      <script type="text/javascript " src="jquery-3.2.0.min.js "></script>
     <script>
             
@@ -24,7 +24,7 @@
 
 $(document).ready(function(){              // по окончанию загрузки страницы
     $('#name').click(function(){      // вешаем на клик по элементу с id = example-1
-        $('#but').load('q'); // загрузку HTML кода из файла example.html               
+        $('#but').load(q); // загрузку HTML кода из файла example.html               
     }) 
 });
    </script>
