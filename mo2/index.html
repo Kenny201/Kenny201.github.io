@@ -19,10 +19,11 @@
     <script>
             
           
-            var q = 'http://'  +  document.getElementById("name").value;  
+           
       
 
-$(document).ready(function(){              // по окончанию загрузки страницы
+$(document).ready(function(){  
+     var q = 'http://'  +  document.getElementById("name").value;  // по окончанию загрузки страницы
     $('#name').click(function(){      // вешаем на клик по элементу с id = example-1
         $('#but').load(q); // загрузку HTML кода из файла example.html               
     }) 
