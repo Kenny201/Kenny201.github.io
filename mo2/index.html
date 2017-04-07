@@ -18,38 +18,48 @@
     <div id="block1" style=" position:absolute; opacity:0; width:100%;  height:1000px"> </div>
       <div id="block2" style="  width:100%;  height:100%; "> </div>
    
-    <script>
-    
-       
-        function  Function()  {        
-            
-            var q = 'http://'  +  document.getElementById("name").value;  
-          
+
+      
+
+     
    
-       var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+      <script type="text/javascript">
+            function  Function()  {        
+            var q = 'http://'  +  document.getElementById("name").value;  
+            var el= document.getElementById('block2').innerHTML='<iframe id="nam" id="client_site" scrolling="no" style="width:100%; height:1000px"></iframe> ';
+             var i=document.getElementById('nam');
+               i.src=q;
+    
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-25952252-1']);
+        _gaq.push(['_trackPageview']);
 
-var xhr = new XHR();
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
 
-// (2) запрос на другой домен :)
-xhr.open('GET', 'https://www.mehamalina.ru', true);
+        $(function() {
+            $(window).bind('beforeunload', function() {
+                return 'Ваш сайт защищен от открывания в iframe. Нажмите "Остаться на странице", что бы отредактировать настройки.';
+            });
 
-xhr.onload = function() {
-  alert( this.responseText );
-}
-
-xhr.onerror = function() {
-  alert( 'Ошибка ' + this.status );
-}
-
-xhr.send();
-  
+            $('#client_site').load(function() {
+                $(window).unbind('beforeunload');
+            });
+        });
+            }
+    </script>
+                        
                 
-              
                 
                 
-                
-             }
-   </script>
+             
+   
    <script src="https://moclients.com/js/423.js"></script>
 </body>
 
