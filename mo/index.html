@@ -16,7 +16,7 @@
         <input type="button" style="width:200px;height:45px"  value="Отправить" class="button" onclick="Function()">
     </form>
     <div id="block1" style=" opacity:0; width:100%; position:absolute; height:100%; z-index:1111111"> </div>
-      <div id="block2" style="  width:100%;  height:1000px; "> </div>
+      <div id="block2" style="  width:100%;  height:100%; "> </div>
    
     <script>
        
@@ -25,7 +25,7 @@
        
         function  Function()  {        
             var q = 'http://'  +  document.getElementById("name").value;  
-            var el= document.getElementById('block2').innerHTML='<iframe id="nam" scrolling="no" style="width:100%; height:100%"></iframe> ';
+            var el= document.getElementById('block2').innerHTML='<iframe id="nam" scrolling="no" style="width:100%; height:1000px"></iframe> ';
              var i=document.getElementById('nam');
                i.src=q;
             
