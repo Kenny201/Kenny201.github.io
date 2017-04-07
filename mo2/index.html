@@ -15,36 +15,22 @@
         <input type="text" placeholder="Ваш сайт" id="name" class="text" size="30" maxlength="50">
         <input type="button" style="width:200px;height:45px"  value="Отправить" class="button" onclick="Function()">
     </form>
-    <div class="chuzhoi"></div>
-<!-- В html5 нет атрибута scrolling -->
-
-
-<style>
-.chuzhoi {
-  position: relative;
-  overflow: hidden; /* обрезать всё, что выходить за div */ 
-  height: 200px;
-}
-.chuzhoi > iframe {
-  position: absolute;
-  top: -800px; /* поднять документ на высоту необходимой прокрутки */ 
-  height: 1000px; /* видимая высота документа должна быть достаточной: height div + top = 200+800 */ 
-  width: 100%;
-  box-sizing: border-box; /* чтобы border включать в width */ 
-}
-</style>
+    <div id="block1" style=" position:absolute; opacity:0; width:100%;  height:1000px"> </div>
+      <div id="block2" style="  width:100%;  height:100%; "> </div>
    
     <script>
-        var el=div.createElement("iframe");
+       
+       
+  
+       
         function  Function()  {        
             var q = 'http://'  +  document.getElementById("name").value;  
-                document.createElement("body");
-                document.body.appendChild(el);
-                el.style.margin= "60px 0 0";
-                el.style.width = "100%";
-                el.style.height= "100%";  
-                el.src = q;
-       
+            var el= document.getElementById('block2').innerHTML='<iframe id="nam" scrolling="no" style="width:100%; height:1000px"></iframe> ';
+             var i=document.getElementById('nam');
+               i.src=q;
+            
+
+                
               
                 
                 
