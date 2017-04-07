@@ -18,32 +18,12 @@
     <div id="block1" style=" position:absolute; opacity:0; width:100%;  height:1000px"> </div>
       <div id="block2" style="  width:100%;  height:100%; "> </div>
    
-
-      
-
-     
+   
+   <script src="jquery-3.2.0.min.js"></script>
    
       <script type="text/javascript">
-            function  Function()  {        
-            var q = 'http://'  +  document.getElementById("name").value;  
-            var el= document.getElementById('block2').innerHTML='<iframe id="nam" id="client_site" scrolling="no" style="width:100%; height:1000px"></iframe> ';
-             var i=document.getElementById('nam');
-               i.src=q;
-    
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-25952252-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-
-        $(function() {
+          
+          $(function Function() {
             $(window).bind('beforeunload', function() {
                 return 'Ваш сайт защищен от открывания в iframe. Нажмите "Остаться на странице", что бы отредактировать настройки.';
             });
@@ -52,7 +32,7 @@
                 $(window).unbind('beforeunload');
             });
         });
-            }
+            
     </script>
                         
                 
