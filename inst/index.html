@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="widgets__conteiner">
+                    <p>Виджет один</p>
+                    <div class="widget__two ">
+                        
+                    </div> 
+                    <p>Виджет два</p>
+                    <div id="widget__three">
+        
+                    </div> 
+                </div>
+            </div>
+    </div>
+
+    </div>
+    </div>
+   <style>
+        p{
+            text-align: center;
+            font-size: 30px;
+        }
+        #widget__one{
+            width:100%;
+            height:900px;
+            border:3px solid #945;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            text-align: center;
+            margin-bottom:50px;
+        }
+        .widget__two{
+            width:100%;
+            height:100%;
+            border:3px solid #451;
+            margin:0 auto;
+            padding:0;
+            margin-bottom:50px;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            flex-wrap:wrap;
+            justify-content: space-around;
+            overflow:hidden;
+           
+         
+        }
+
+         .widget__two li {
+            list-style:none;
+            padding:0;
+            margin:20px;
+        }
+         #widget__three{
+            width:100%;
+            height:800px;
+            border:3px solid #111;
+            margin:0;
+            padding:0;
+            overflow:hidden;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            
+        }
+         #widget__three a{
+                
+                padding:0;
+                margin:20px;
+            }
+    </style>    
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="jQInstaPics/js/jqinstapics.js"></script>
+<script type="text/javascript" src="instafeed.js-master/instafeed.js"></script>
+<script>
+$(document).ready(function () {
+  $('#widget__one').pongstgrm({
+    accessId:  '8d5e4d1c97e24f21b6402b2eae38cc10',
+    accessToken:'2262693937.8d5e4d1.8155991d1b5c4913ac31ae6cbd159d68',
+    show: 'recent',
+    count:40,
+    pager:true
+    
+  });
+});
+</script>
+<script>
+
+$(".widget__two").jqinstapics({
+  "user_id": "2262693937",
+  "access_token": "2262693937.8d5e4d1.8155991d1b5c4913ac31ae6cbd159d68",
+  "count": 18
+});
+
+
+</script>
+<script>
+ $(function() {
+
+//Настраиваем instafeed
+    var feed = new Instafeed({
+        clientId: '8d5e4d1c97e24f21b6402b2eae38cc10',
+        target: 'widget__three',
+        get: 'user',
+        userId: '2262693937',
+        links: true,
+        limit: 60,
+        sortBy: 'most-recent',
+        resolution: 'thumbnail',
+        accessToken: '2262693937.8d5e4d1.8155991d1b5c4913ac31ae6cbd159d68'
+       
+    });
+    feed.run();
+
+});
+</script>
+</body>
+
+</html>
