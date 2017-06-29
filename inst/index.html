@@ -92,31 +92,14 @@
 <script type="text/javascript" src="jQInstaPics/js/jqinstapics.js"></script>
 <script type="text/javascript" src="instafeed.js-master/instafeed.js"></script>
 <script>
-$(document).ready(function () {
-  $('#widget__one').pongstgrm({
-    accessId:  '8d5e4d1c97e24f21b6402b2eae38cc10',
-    accessToken:'2262693937.8d5e4d1.8155991d1b5c4913ac31ae6cbd159d68',
-    show: 'recent',
-    count:40,
-    pager:true
-    
-  });
-});
-</script>
-<script>
-
 $(".widget__two").jqinstapics({
   "user_id": "2262693937",
   "access_token": "2262693937.8d5e4d1.8155991d1b5c4913ac31ae6cbd159d68",
   "count": 18
 });
-
-
 </script>
 <script>
  $(function() {
-
-//Настраиваем instafeed
     var feed = new Instafeed({
         clientId: '8d5e4d1c97e24f21b6402b2eae38cc10',
         target: 'widget__three',
@@ -126,11 +109,9 @@ $(".widget__two").jqinstapics({
         limit: 60,
         sortBy: 'most-recent',
         resolution: 'thumbnail',
-        accessToken: '2262693937.8d5e4d1.8155991d1b5c4913ac31ae6cbd159d68'
-       
+        accessToken: '2262693937.8d5e4d1.8155991d1b5c4913ac31ae6cbd159d68' 
     });
     feed.run();
-
 });
 </script>
 </body>
