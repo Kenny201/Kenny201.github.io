@@ -1,0 +1,75 @@
++media-breakpoint-up(xl) {
+    .oneForm{
+        
+        height:600px;
+        &__wrap{
+            background: url(form-back-catalog-new.jpg) no-repeat center;
+          
+            height:539px;
+            
+           padding-top: 130px;
+            p{
+                color:#fff;
+                text-align:center;
+                font-size:23px;
+               text-transform: uppercase;
+               margin:0;
+               padding-top:20px;
+            }
+        }
+        &__header {
+            font-size:42px;
+            color:#fff;
+            line-height:1.3;
+            font-weight:900;
+            text-align:center;
+            text-transform: uppercase;
+
+
+        }
+        &__form{
+               background: transparent;
+               justify-content: space-between;
+               box-shadow:none;
+               
+               align-content: center;
+               display:flex;
+               padding-top:95px;
+               margin:0 auto;
+               width:850px;
+           input{
+                outline:none;
+                width:265px;
+                height:54px;
+                border-radius:5px;
+                &:nth-child(1){
+                    margin-bottom:0;
+                     border:2px solid #d8d8d8;
+                     &[placeholder]{
+                         padding-left:20px;
+                          font-size:18px;
+                     }
+                }
+                 &:nth-child(2){
+                    margin-bottom:0;
+                     border:2px solid #d8d8d8;
+                       &[placeholder]{
+                         padding-left:20px;
+                         font-size:18px;
+                     }
+                }
+                 &:nth-child(3){
+                   background: #FF7900;
+                   font-size:18px;
+                   text-align:center;
+                   border:none;
+                   margin-bottom:0;
+                   box-shadow:0 15px 30px rgba(0,0,0,0.2);
+                   color:#fff;
+                }
+
+            }
+        }
+    }
+
+}

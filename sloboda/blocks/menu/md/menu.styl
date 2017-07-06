@@ -1,0 +1,101 @@
++media-breakpoint-up(md) {
+    .menu {   
+        display: block;
+        background-color: #393185;
+         height:55px;
+            ul{
+                   margin:0;
+                   padding:0;
+                   list-style:none;
+
+               }
+            
+           .block--menu{
+               display:flex;
+               height:100%;
+               justify-content: space-between;
+               align-items:center;
+               position:relative;
+            
+               a{
+                   color:#fff;
+                   text-transform: uppercase;
+                   font-weight:bold;
+                   font-size: 11px;
+                   text-decoration: none;
+                 
+           }  
+           li {
+               cursor: pointer;
+           }
+         
+        }
+        
+        .menu__list{
+            height:100%;
+            display:flex;
+            align-items:center;
+            position: relative;
+         
+            &:after{
+                content:'';
+                position: absolute;
+                width:20px;
+                height:20px;
+                background: url(header-arrow.png) no-repeat center;
+                right:-25px;
+            }
+        }
+               
+           .project__list{  
+                   position:absolute;    
+                   top:50px;
+                   left:-20px;
+                   width:150px;
+                   display: none;
+            
+                   background-color: #26205b;
+                   li{
+                         padding: 18px;
+                      
+                         border-bottom:1px solid #393185;
+                        &:hover{
+                             background:#666;
+                         }
+                         a{
+                             display:block;
+                            color:#afa9eb;
+                         font-size:12px;
+                         font-weight:normal;
+                      
+                         }
+                   }
+               }
+            .object__list{
+                   position:absolute;
+                   top:50px;
+                   width:200px;
+                   left:-25px;  
+                   background-color: #26205b;
+                   display: none;
+                   li{
+                         padding: 18px;
+                         border-bottom:1px solid #393185;
+                        &:hover{
+                             background:#666;
+                         }
+                          a{
+                            display:block;
+                            color:#afa9eb;
+                          
+                            font-size:12px;
+                            font-weight:normal;
+                        
+                       
+                         }
+                   }
+            }
+          
+        
+    }
+}

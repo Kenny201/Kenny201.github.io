@@ -1,0 +1,120 @@
++media-breakpoint-up(md) {
+    .header {    
+       
+          position: static;
+        .header__mobile-container{
+            display:none;
+        }
+        .header__mobile{
+           display:none;
+        }
+        &__background{
+            background-color:#EFECE8;
+        }
+        &__menu{
+           
+          
+            display:flex;
+            height:45px;
+            justify-content: center;
+            align-items:center;
+            .menu-wrap{
+                width:100%;
+
+                 display:flex;
+                   flex-direction: row;
+              
+                justify-content: space-between;
+            a{
+                text-decoration: none;
+                color:#111;
+                font-size:0.85em;
+                &:hover{
+                       color:#D76E0B;
+                }
+                &:last-child{
+                    color:#FB8A00;
+                    font-weight:bold;
+                }
+            }
+            }
+        }
+        .references__contact{
+            display:none;
+        }
+         .header-logo{
+            display:flex;
+            height:100px;
+            width:100%;
+     
+            justify-content: space-between;
+        }
+        .logo{
+            width:180px;
+            img{
+                 width:100%;}
+        }
+        .counts{
+            width:300px;
+            display:flex;
+            justify-content: space-between;
+         
+            .count-1{
+                width:120px;
+                display:flex;
+                justify-content: space-between;
+                span:nth-child(1){
+                    color:#393185;
+                    font-size:25px;
+                    font-weight: 900;
+                    position: relative;
+                     &:before{
+                       display:none;
+                    }
+                    
+                }
+                span:nth-child(2){
+                    color:#777777;
+                     font-size:14px;
+                }
+            }
+            .count-2{
+                width:150px;
+                display:flex;
+                justify-content: space-between;
+                span:nth-child(1){
+                    color:#393185;
+                    font-size:25px;
+                    font-weight: 900;
+                    position: relative;
+                    &:before{
+                        
+                        display:none;
+                    }
+                }
+                span:nth-child(2){
+                    font-size:14px;
+                    color:#777777;
+                }
+            }
+        }
+        .logo,.count-1,.count-2,.telephone{
+            align-self:center;
+        }
+        .telephone{
+            span{
+                line-height:25px;
+                &:nth-child(1){
+                    color:#777777;
+                
+                }
+                &:nth-child(2){
+                    color:#393185;
+                    font-size:20px;
+                    font-weight: 900;
+                }
+        }
+        }
+      
+    }
+}

@@ -1,0 +1,167 @@
++media-breakpoint-up(xl) {
+ 
+    .header {    
+      position: static;
+        .header__mobile-container{
+            display:none;
+        }
+        .header__mobile{
+           display:none;
+        }
+        &__background{
+            background-color:#EFECE8;
+        }
+        &__menu{
+            height:45px;
+      
+         
+            display:flex;
+            justify-content: space-between;
+            align-self:center;
+            .menu-wrap{
+                width:685px;
+                position: relative;
+                top:2px;
+                flex-direction: row;
+                display:flex;
+                justify-content: space-between;
+            a{
+                text-decoration: none;
+                color:#111;
+                font-size:16px;
+                &:hover{
+                       color:#D76E0B;
+                }
+                &:last-child{
+                    color:#FB8A00;
+                    font-weight:bold;
+                }
+            }
+            }
+        }
+        .references__contact{
+            display:flex;
+            justify-content: flex-end;
+            align-items:center;
+            position: relative;
+            top:2px;
+            .contact-wrap{
+                width:345px;
+                display:flex;
+                justify-content: space-between;
+             
+               a{
+                    align-self:center;
+               }
+
+            }
+            span{
+                align-self:center;
+                color:#777788;
+                font-size:16px;
+            }
+
+
+        }
+        .header-logo{
+            display:flex;
+            height:100px;
+            width:100%;
+            align-items:center;
+            justify-content: space-between;
+        }
+        .logo{
+            width:230px;
+            img{
+                 width:100%;}
+        }
+        .counts{
+            width:380px;
+            height:50px;
+            display:flex;
+            position: relative;
+            top:10px;
+            justify-content: space-between;
+            align-items:center;
+            .count-1{
+                width:150px;
+                display:flex;
+                justify-content: space-between;
+                span:nth-child(1){
+                    color:#393185;
+                    font-size:36px;
+                    font-weight: 900;
+                    position: relative;
+                     &:before{
+                        content:'';
+                        position: absolute;
+                        width: 13px; 
+                        display:block;
+                        height:35px;
+                        right:63px;
+                        bottom:15px;
+                        background: url(header-icon.png) no-repeat center;
+                    }
+                    
+                }
+                span:nth-child(2){
+                    color:#777777;
+                }
+            }
+            .count-2{
+                width:180px;
+                display:flex;
+                justify-content: space-between;
+                span:nth-child(1){
+                    color:#393185;
+                    font-size:36px;
+                    font-weight: 900;
+                    position: relative;
+                    &:before{
+                        content:'';
+                        display:block;
+                        position: absolute;
+                        width: 13px; 
+                        height:35px;
+                        right:40px;
+                        bottom:15px;
+                        background: url(header-icon.png) no-repeat center;
+                    }
+                }
+                span:nth-child(2){
+                    color:#777777;
+                }
+            }
+        }
+        .logo,.count-1,.count-2,.telephone{
+            align-self:center;
+        }
+        .telephone{
+            position: relative;
+            &:before{
+                        content:'';
+                        position: absolute;
+                        width:30px;
+                        height:30px;
+                        left:-40px;
+                        top:20px;
+                        background: url('header-phone.png') no-repeat center;
+                    }   
+            span{
+                line-height:25px;
+                &:nth-child(1){
+                    color:#777777;
+                
+                }
+                &:nth-child(2){
+                    color:#393185;
+                    font-size:30px;
+                    font-weight: 900;
+                   
+                }
+        }
+        }
+        
+      
+    }
+}
