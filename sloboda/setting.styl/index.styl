@@ -1,0 +1,53 @@
+@import "../node_modules/normalize.css/normalize.css"
+@import "flexbox-grid.styl"
+@import "../node_modules/slick-carousel/slick/slick-theme.css"
+@import "../node_modules/slick-carousel/slick/slick.css"
+@import "../javascript/YouTubePopUp.css"
+
+init($breakpoints, $columns)
+
+html
+    height: 100%
+@font-face
+        font-family "futurica"
+        src url('Futurica.ttf') 
+body
+   
+    margin: 0
+    font-family 'a_Futurica', sans-serif
+    height: 100%
+    line-height:1.3
+   
+*
+    box-sizing border-box
+
+h1, h2, h3, h4, h5, h6
+    margin-top 0
+    margin-bottom 0
+
+input:focus
+    outline none
+
+.grid
+    padding: 0 15px
+.grid.grid--container
+     height:100%;
+        
+.row
+    margin 0 -15px
+
+.col
+    padding 0 15px
+
+create-container($container-max-widths)
+
+.slick-dots li button:before
+    opacity 1
+
+@import "../blocks/**/xs/*.styl"
+@import "../blocks/**/sm/*.styl"
+@import "../blocks/**/md/*.styl"
+@import "../blocks/**/lg/*.styl"
+@import "../blocks/**/xl/*.styl"
+
+
